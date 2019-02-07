@@ -8,7 +8,7 @@
     "test": "ng test --project=lib --watch=false --code-coverage",
     "build": "ng build --project=lib",
     "build.demo": "ng build --project=demo",
-    "publish": "npm publish dist"
+    "publish": "npm publish dist/lib"
   },
   "private": true,
   "dependencies": {
