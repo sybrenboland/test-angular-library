@@ -7,7 +7,8 @@
     "lint": "ng lint",
     "test": "ng test --project=lib --watch=false --code-coverage",
     "build": "ng build --project=lib",
-    "build.demo": "ng build --project=demo"
+    "build.demo": "ng build --project=demo",
+    "publish": "npm publish dist"
   },
   "private": true,
   "dependencies": {
