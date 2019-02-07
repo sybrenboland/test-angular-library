@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "start": "ng serve --project=demo",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "ng test --project=lib --watch=false --code-coverage",
+    "build": "ng build --project=lib",
+    "build.demo": "ng build --project=demo"
   },
   "private": true,
   "dependencies": {
@@ -38,9 +38,10 @@
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
     "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage": "^1.1.2",
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
-    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-mocha-reporter": "^2.2.5",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
